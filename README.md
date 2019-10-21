@@ -8,7 +8,7 @@ Also features customization of individual elements. With the advanced-customizat
 
 
 
-![](Screenshot_2019-10-21 OctoPrint.png)
+ ![](extras/metroblue.png) 
 ## Setup
 
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager) by searching for "Themify", or
