@@ -174,9 +174,9 @@
         }
 
         .btn-danger {
-            background-color: #f54f00;
+            background-color: #ff2400;
             &:hover {
-                background-color: lighten(#f54f00, 10);
+                background-color: lighten(#ff2400, 10);
             }
         }
 
@@ -505,6 +505,7 @@
 
         .scrollable::-webkit-scrollbar-track,.pre-scrollable::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px fade(@notquiteBlack,50);
+            box-shadow: inset 0 0 6px fade(@notquiteBlack,50);
         }
 
         legend {
@@ -549,7 +550,7 @@
                 }
             &:focus {
                 outline: none;
-                border: 0);
+                border: 0;
             }
         }
 
@@ -598,10 +599,33 @@
         }
 
         #settings_plugin_pluginmanager_workingdialog_output .stderr {
-            color: #f54f00 !important;
+            color: #ff2400 !important;
         }
 
         #settings_plugin_pluginmanager_workingdialog_output .call {
             color: #0088cc !important;
+        }
+
+        .babystepUp::before, .babystepDown::before, .microstepUp::before, .microstepDown::before {
+        	font-family: FontAwesome;
+   			display: inline-block;
+   			padding-right: 6px;
+   			vertical-align: middle;
+        }
+
+        .babystepUp::before {
+        	content: "\F102";
+        }
+
+        .babystepDown::before{
+        	content: "\F103";
+        }
+
+        .microstepUp::before{
+        	content: "\F106";
+        }
+
+        .microstepDown::before{
+        	content: "\F107";
         }
     }
