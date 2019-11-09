@@ -2,7 +2,7 @@
 
  .metro() {
         body {
-            background-color: #1B1B1B;
+            background-color: @darkish;
             color: @notquiteWhite;
             font-family: @fontbody;
             font-size: 14px;
@@ -14,7 +14,7 @@
         }
 
         a:hover {
-            color: lighten(@textcolor, 20)
+            color: lighten(@textcolor, 20);
         }
         
         .octoprint-container .tab-content h1 {
@@ -135,7 +135,7 @@
         }
 
         .btn btn-primary, .btn-primary[disabled] {
-            background-color: #0077b3;
+            background-color: @metrocolor;
         }
 
         .btn-primary {
@@ -174,9 +174,9 @@
         }
 
         .btn-danger {
-            background-color: #ff2400;
+            background-color: @danger;
             &:hover {
-                background-color: lighten(#ff2400, 10);
+                background-color: lighten(@danger, 10);
             }
         }
 
@@ -383,12 +383,12 @@
         }
 
         .text-error {
-            color: #f54f00 !important;
+            color: @danger !important;
             font-weight: normal !important;
         }
 
         .text-success {
-            color: #0088cc !important;
+            color: @metrocolor !important;
         }
 
         .legend > table {
@@ -599,11 +599,11 @@
         }
 
         #settings_plugin_pluginmanager_workingdialog_output .stderr {
-            color: #ff2400 !important;
+            color: @danger !important;
         }
 
         #settings_plugin_pluginmanager_workingdialog_output .call {
-            color: #0088cc !important;
+            color: @metrocolor !important;
         }
 
         .babystepUp::before, .babystepDown::before, .microstepUp::before, .microstepDown::before {
@@ -627,5 +627,47 @@
 
         .microstepDown::before{
         	content: "\F107";
+        }
+
+        .alert {
+        	background-color: @boxcolor;
+        	color: @textcolor;
+        	text-shadow: none;
+        	box-shadow: none;
+        	border: 0;
+        	-webkit-border-radius: 0;
+        	-moz-border-radius: 0;
+        	border-radius: 0;
+        }
+
+        .alert a, .alert h4 {
+        	color: @metrocolor;
+        }
+
+        .ui-pnotify-shadow {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+
+		.ui-pnotify-icon {
+			font-size: 17.5px;
+			color: @textcolor;
+		}
+
+        .popover {
+        	background-color: @notquiteBlack;
+        }
+
+        .popover.bottom .arrow:after {
+        	top:1px;
+        	margin-left:-10px;
+        	border-bottom-color: @metrocolor;
+        }
+
+        .popover-title {
+        	font-size: 16px;
+        	color: @textcolor;
+        	background-color: @metrocolor;
         }
     }
