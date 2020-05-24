@@ -88,12 +88,12 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
 
                 # version check: github repository
                 type="github_release",
-                user="birkbjo",
+                user="mikekscholz",
                 repo="OctoPrint-Themeify",
                 current=self._plugin_version,
 
                 # update method: pip
-                pip="https://github.com/birkbjo/OctoPrint-Themeify/archive/{target_version}.zip"
+                pip="https://github.com/mikekscholz/OctoPrint-Themeify/archive/{target_version}.zip"
             )
         )
 

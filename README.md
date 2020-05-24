@@ -8,7 +8,8 @@ Also features customization of individual elements. With the advanced-customizat
 
 
 
- ![](extras/metroblue.png) 
+![](extras/discorded_ss.png)
+![](extras/customization.png)
 ## Setup
 
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager) by searching for "Themify", or
